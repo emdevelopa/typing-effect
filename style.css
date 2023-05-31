@@ -1,0 +1,22 @@
+body{
+    font-family: sans-serif;
+}
+.type{
+    position: relative;
+}
+.type::after{
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 2px;
+    border-right: 2px solid black;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
